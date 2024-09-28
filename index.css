@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* 
+:root {
+  --custom-green: hsl(75, 94%, 57%);
+  --custom-white: hsl(0, 0%, 100%);
+  --custom-grey1: hsl(0, 0%, 20%);
+  --custom-grey2: hsl(0, 0%, 12%);
+  --custom-grey3: hsl(0, 0%, 8%);
+}
+
+body {
+  width: auto;
+  min-height: 100vh;
+  background-color: var(--custom-grey3);
+  color: var(--custom-white);
+  font-family: Inter;
+  align-content: center;
+}
+
+.container {
+  width: 32%;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  background-color: var(--custom-grey2);
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-img img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 40px;
+}
+
+.profile-title h2 {
+  color: var(--custom-green);
+  font-size: 20px;
+  margin-top: -12px;
+}
+
+.profile-status {
+  padding-top: 8px;
+  font-size: 14px;
+}
+
+.links {
+  width: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  gap: 1rem;
+  padding-top: 20px;
+}
+
+.links li a {
+  display: block;
+  width: 100%;
+  color: var(--custom-white);
+  text-decoration: none;
+  background-color: var(--custom-grey1);
+  padding: 1rem 10px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0 auto;
+}
+*/
+
+/* New Styles */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-green: hsl(75, 94%, 57%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-grey: hsl(0, 0%, 20%);
+  --clr-dark-grey: hsl(0, 0%, 12%);
+  --clr-off-black: hsl(0, 0%, 8%);
+  --fw-normal: 400;
+  --fw-semi-bold: 600;
+  --fw-bold7: 00;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  font-weight: var(--fw-normal);
+  background-color: var(--clr-off-black);
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.container {
+  padding-inline: 15rem;
+  margin: 9rem auto 0;
+}
+
+.profile {
+  background-color: var(--clr-dark-grey);
+  width: 32rem;
+  padding: 1.8rem;
+  border-radius: 0.8rem;
+  text-align: center;
+}
+
+.profile .profile-img {
+  width: 9rem;
+  aspect-ratio: 1;
+  margin: 0 auto;
+}
+
+.container .profile-img img {
+  display: inherit;
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.profile .profile-title {
+  margin-top: 3rem;
+}
+
+.profile .profile-title h1 {
+  color: var(--clr-white);
+  font-size: 2.3rem;
+  font-weight: var(--fw-bold7);
+}
+
+.profile .profile-title h2 {
+  color: var(--clr-green);
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.profile .profile-header p {
+  color: var(--clr-white);
+}
+
+.profile .social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.profile .social-media li {
+  width: 100%;
+}
+
+.profile .social-media li a {
+  background-color: var(--clr-grey);
+  color: var(--clr-white);
+  padding: 1.6rem 0;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  font-weight: var(--fw-semi-bold);
+  transition: all 0.3s ease-in-out;
+}
+
+.profile .social-media li:hover a {
+  background-color: var(--clr-green);
+  color: var(--clr-off-black);
+}
+
+@media (min-width: 1200) {
+  .container {
+    margin-top: 0;
+  }
+
+  .profile {
+    width: 38rem;
+    padding: 3rem 4rem;
+  }
+}
